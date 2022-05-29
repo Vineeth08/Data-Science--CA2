@@ -33,7 +33,7 @@ pairs(heart_data, labels = colnames(heart_data), main = "Heart dataset correlati
 
 # We can use libraries to help improve 
 # the chart. Also includes correlations between variables
-#install.packages("psych")
+install.packages("psych")
 library(psych)
 
 pairs.panels(heart_data,
@@ -135,7 +135,7 @@ unique(heart_data$`Chances_of_Heart Attack`)
 # Assumption 1. Lack of strong influential outliers in variables. 
 # Hence lets check outliers
 attach(heart_data)
-par(opar)    
+  
 boxplot(Cholesterol, 
         main = "Cholesterol", 
         sub = paste("Outlier rows: ", 
